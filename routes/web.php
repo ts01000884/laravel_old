@@ -13,4 +13,17 @@
 
 Route::get('/', function () {
     return view('welcome');
+    //return 'Hello Laravel~';
+});
+
+Route::get('cat', function () {
+    return view('test')
+    ->with('title','貓王網')
+    ->with('text1','測試表格1');
+    //return 'Hello Laravel~';
+});
+
+Route::get('x', function () {
+    
+    return 'Hello Laravel~';
 });
