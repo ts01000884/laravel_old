@@ -34,6 +34,9 @@ Route::get('cat', function () {
 Route::get('post/{id}', 'testController@show');
 
 
+Route::get('bitoex', 'testController@bitoex');
+
+
 Route::get('x', function () {
     
     return 'Hello Laravel~';
